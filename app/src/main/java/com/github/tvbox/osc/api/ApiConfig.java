@@ -127,7 +127,7 @@ public class ApiConfig {
     }
 
     public void loadConfig(boolean useCache, LoadConfigCallback callback, Activity activity) {
-        String apiUrl = Hawk.get(HawkConfig.API_URL, "https://tv.xjss.xyz/17.json");
+        String apiUrl = Hawk.get(HawkConfig.API_URL, "http://tv.xjss.eu.org/17.json");
         if (apiUrl.isEmpty()) {
             callback.error("-1");
             return;
